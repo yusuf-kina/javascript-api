@@ -1,3 +1,3 @@
 # Javascript fetch api ile veri çekme
 
-[Verilerin geldiği site] ( https://dummyjson.com/products )
+[Verilerin_geldiği_site] ( https://dummyjson.com/products )
