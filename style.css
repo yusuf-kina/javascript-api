@@ -1,0 +1,347 @@
+body{
+    overflow-x: hidden;
+}
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+
+.header-link{
+    text-decoration: none;
+    position: relative;
+    top: 10px;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+}
+.header-link:hover{
+    color: red;
+}
+.header{
+    padding: 1%;
+    background-color:#d3d3d3;
+}
+.icon-login{
+    position: relative;
+    top: -2px;
+    margin-right: 2px;
+}
+
+.footer p{
+    margin-left: 3%;
+    margin-top: 1%;
+}
+*{box-sizing: border-box;}
+    .slider{
+        width: 100%;
+        position: relative;
+        margin: auto;
+    }
+
+    .slide-image{
+        width: 100%;
+        height: 30em; 
+        object-fit: cover;
+    }
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+    /* İleri butonunun pozisyonunu ayarlıyoruz.*/
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+    }
+
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+    .number {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+    /* Fading animasyonu */
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+        opacity: 1 !important;
+    }
+
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+        
+    .prev, .next,.text {font-size: 11px}
+    
+}
+.product-div{
+    width: 18%;
+    border: 1px solid orange;
+    display: inline-block;
+    margin: 1%;
+    border-radius: 5px;
+    
+    
+}
+.image-thumbnail{
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.details-image{
+    display: inline-block;
+    width: 49%;
+}
+.details-description{
+display: inline-block;
+width: 50%;
+}
+.details-price{
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+}
+.details-stock{
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+    float: right;
+}
+.details-sale{
+    display: inline-block;
+    margin-right: 0;
+    color: green;
+
+}
+.details-rating{
+    display: inline-block;
+    float: right;
+    color: rgb(141, 141, 23);
+}
+.basket-btn{
+    background-color: rgb(241, 118, 3);
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    color:white;
+    font-size:18px;
+    border:none;
+}
+.basket-btn:hover{
+    color: black;
+    box-shadow: 1px 0px 7px 5px #c2c2c2;
+}
+
+.pagination-style{
+    text-align: center;
+}
+.pageButton-style{
+    margin-left: 10px;
+    border: none;
+    border-radius: 3px;
+    width: 30px;
+    height: 30px;
+}
+.product-slider{
+    width: 25%;
+    border: 1px solid orange;
+    display: inline-block;
+    margin: 1%;
+    border-radius: 5px;
+}
+/* Eğer farklı bir tasarım isterseniz buradaki CSS'i özelleştirebilirsiniz */
+.slider-container {
+  margin: 0 auto;
+  white-space: nowrap;
+}
+
+.product-slider {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.product-slider:hover {
+  transform: scale(1.05);
+}
+/* CSS Stili */
+/* Büyük resimlerin container'ı */
+.big-image-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* İstediğiniz maksimum genişliği belirleyebilirsiniz */
+    margin: 0 auto; /* Ortalamak için */
+    overflow: hidden; /* Ekran dışına taşan resimleri gizlemek için */
+}
+
+/* Geçiş butonlarının stilleri */
+.swiper-button-prev,
+.swiper-button-next {
+    position: absolute;
+    top: 50%; /* Fotoğrafın yüksekliğinin yarısı kadar üste gelecek */
+    transform: translateY(-50%);
+    /* Diğer özelleştirmeler burada */
+}
+
+
+/* Büyük resimlerin swiper container'ı */
+.swiper-container.big-image-swiper {
+    width: 100%;
+}
+
+/* Büyük resimlerin swiper slide'ları */
+.swiper-slide {
+    width: 100%;
+}
+
+/* Büyük resimlerin içerisindeki resimler */
+.swiper-slide img {
+    width: 100%;
+    height: 400px; /* Otomatik yükseklik hesaplaması */
+}
+
+/* Küçük resim container'ı */
+.thumbnail-container {
+    width: 100%;
+    max-width: 600px; /* İstediğiniz maksimum genişliği belirleyebilirsiniz */
+    margin: 20px auto; /* Ortalamak için */
+}
+
+/* Küçük resimlerin swiper container'ı */
+.swiper-container.thumbnails-swiper {
+    width: 100%;
+}
+
+/* Küçük resimlerin swiper slide'ları */
+.thumbnail {
+    width: 100px; /* Küçük resim genişliği */
+    height: 100px; /* Küçük resim yüksekliği */
+    margin-left: 30px;
+}
+
+/* Küçük resimlerin içerisindeki resimler */
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Resimlerin orantılı bir şekilde yerleştirilmesini sağlar */
+}
+.price-style{
+    margin: 10px;
+}
+.stock-style{
+    margin: 10px;
+}
+@media screen and (max-width: 700px) {
+    .product-div {
+      width: 48%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .product-slider {
+      width: 48%;
+    }
+}
+@media screen and (min-width: 701px) and (max-width: 1050px) {
+    .product-div {
+      width: 31%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .details-image {
+      width: 100%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .details-description {
+      width: 100%;
+      margin-top: 10%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .thumbnail {
+      margin-left: 15px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .header {
+      padding: 7%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .swiper-slide img {
+        width: 100%;
+        height: 230px;
+    }
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .section-style {
+    /* Sayfa içeriğinin olduğu div, footer'ın üzerinde veya altında kalmadan arada esnek boşluk bırakacak */
+    flex: 1;
+    margin-bottom: 25px;
+  }
+  
+  .footer {
+    /* Footer, flex container'a sabitlenecek */
+    flex-shrink: 0;
+    width:100% ;
+    background-color: #d3d3d3;
+    background-color: #f0f0f0; 
+  }
